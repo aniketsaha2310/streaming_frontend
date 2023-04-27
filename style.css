@@ -1,0 +1,181 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+}
+.navbar{
+    background: #1d2026;
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 8%;
+}
+nav .menu{
+    width: 25px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 160px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover{
+    color: darkgreen;
+}
+
+/* nav ul li a:hover{
+    background-color: darkgreen;
+    padding: 5px;
+    border-radius: 20px;
+} */
+
+.lamp{
+    position: absolute;
+    top: -100px;
+    left: 22%;
+    width: 200px;
+}
+.lampimg{
+    width: 100%;
+}
+.lightimg{
+    position: absolute;
+    top: 97%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 700px;
+    margin-left: -10px;
+    animation: Fluctuation 4s ease-out;  
+}
+.tvimg{
+    position: absolute;
+    top: 140%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 250px;
+    margin-left: -10px;
+    animation: Fluctuation 4s ease-out;  
+}
+.textmain{
+    max-width: 570px;
+    margin-top: 7%;
+    margin-left: 50%;
+}
+.textmain h1{
+    font-size: 40px;
+    font-weight: 400;
+    overflow: hidden;
+    border-right: 0.15em solid orange; 
+    margin: 0 auto; 
+    animation: 
+    typing-slash 2.5s steps(40, end),
+    blink-slash .75s step-end infinite;
+}
+.textmain a{
+    text-decoration: none;
+    background: #00986f;
+    padding: 14px 40px;
+    display: inline-block;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 30px;
+    border-radius: 30px;
+}
+.textmain a:hover{
+    background-color: darkgreen;
+}
+
+.query{
+    position: absolute;
+    top: 20%;
+    left:30%;
+}
+.query h1{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    margin-top: -75px;
+    margin-bottom: 10px;
+}
+.query form{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.query label, input {
+  display: inline-block;
+  margin-top: 10px;
+  width: 300px;
+  height: 26px;
+}
+
+label {
+    width: 30%;
+    text-align: left;
+    color: #fff;
+}
+
+.query form textarea{
+    resize: none;
+    width: 300px;
+    height: 100px;
+    margin-top: 10px;
+}
+.query fieldset legend{
+    text-decoration: none;
+    color: #00986f;
+}
+#submit{
+    text-decoration: none;
+    background: #00986f;
+    display: inline-block;
+    height: 40px;
+    color: #fff;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-radius: 30px;
+}
+#submit:hover{
+    background-color: darkgreen;
+}
+@keyframes Fluctuation{
+    
+    0%, 31.999%, 32%, 35.999%, 43%, 62.999%, 64%, 65.999% {
+		opacity: 0;
+	}
+	35%, 33%, 42.999%, 61%, 63.999%, 67.999% , 99.999% {
+		opacity: 1;
+	}
+}
+
+@keyframes typing-slash {
+    from { width: 0 }
+    to { width: 100% }
+}
+  
+@keyframes blink-slash {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
